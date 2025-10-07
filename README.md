@@ -47,5 +47,5 @@ pip install selenium webdriver-manager beautifulsoup4 pandas requests
 
 ## Autor
 
-hfuentes.ca
+Arluxs
 
