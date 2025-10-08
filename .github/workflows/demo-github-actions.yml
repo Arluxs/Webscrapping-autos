@@ -1,0 +1,13 @@
+name: Demo GitHub Actions
+on: [push]
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say triggered
+        run: echo "Triggered by ${{ github.event_name }} on ${{ github.ref }}"
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: List files
+        run: ls ${{ github.workspace }}
